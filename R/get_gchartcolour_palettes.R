@@ -68,3 +68,31 @@ get_colours_from_palette <- function(palette){
   dplyr::pull(palette, hex_code)
 
 }
+
+
+#' A function to assign all palettes
+#'
+#' @param palettes a list of palettes gained through get_g_chartcolour_palettes. If null, the palettes will be scraped. Defaults to NULL
+#' @export
+#' @examples
+#' assign_all_palettes()
+
+
+
+assign_all_palettes <- function(palettes = NULL){
+
+  if(is.null(palettes)){
+
+  palettes <- get_g_chartcolour_palettes()
+
+  }
+
+
+  purrr::map2(palettes,names(palettes),
+              function(palette,name){
+                assign(name, palette, envir = .GlobalEnv)
+              })
+
+
+}
+
