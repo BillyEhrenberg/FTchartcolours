@@ -19,7 +19,7 @@ plot_g_chartcolour_palettes <- function(g_chartcolour_palettes_df){
     ggplot2::geom_tile()+
     ggplot2::geom_tile(fill = 'white', width = .8, height = .6, alpha = .2)+
     ggplot2::scale_fill_manual(values = g_chartcolour_palettes_df$hex_code)+
-    ggplot2::theme_minimal(
+    ggplot2::theme(
       legend.position = 'none'
     )+
     ggplot2::geom_text(ggplot2::aes(label = hex_code), size = 3)+
