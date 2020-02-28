@@ -1,0 +1,19 @@
+Package: FTchartcolours
+Type: Package
+Title: Loads And Plots FT Colour Palettes
+Version: 0.1.0
+Author: Billy Ehrenberg
+Maintainer: Billy Ehrenberg <billy.ehrenberg@ft.com>
+Description: Loads And Plots FT Colour Palettes
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    rvest,
+    stringr,
+    purrr,
+    magrittr,
+    xml2,
+    tibble
+RoxygenNote: 7.0.2
