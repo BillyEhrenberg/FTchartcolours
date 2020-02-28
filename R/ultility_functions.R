@@ -1,9 +1,10 @@
 #' A function to collapse a vector into a character string.
 #'
-#' This function is a wrapper around the paste(c, collapse = '')
+#' This function is a wrapper around the paste
 #' @param array a vector
 #' @param sep what to interpace the array elements with, defualts to the or operator |
 #' @export
+#' @examples
 #' myCollapse()
 
 myCollapse <- function(array, sep = '|'){
@@ -12,9 +13,9 @@ myCollapse <- function(array, sep = '|'){
 
 #' Converts a three character hexcode, eg. #FFF to its six-character equivilent
 #'
-#' This function is a wrapper around the paste(c, collapse = '')
 #' @param hex a websafe hexcode, starting with #
 #' @export
+#' @examples
 #' hex_three_to_hex_six()
 
 

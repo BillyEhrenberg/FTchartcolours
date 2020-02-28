@@ -12,3 +12,6 @@ get_colours_from_palette(palette)
 \description{
 A function to extract the swebsafe hex codes from a tabularised palette
 }
+\examples{
+get_colours_from_palette()
+}

@@ -10,5 +10,8 @@ hex_three_to_hex_six(hex)
 \item{hex}{a websafe hexcode, starting with #}
 }
 \description{
-This function is a wrapper around the paste(c, collapse = '')
+Converts a three character hexcode, eg. #FFF to its six-character equivilent
+}
+\examples{
+hex_three_to_hex_six()
 }

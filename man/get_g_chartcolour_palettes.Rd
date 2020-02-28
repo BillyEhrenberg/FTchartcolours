@@ -10,3 +10,6 @@ get_g_chartcolour_palettes()
 Returns a named list of the palettes on this page https://ft-interactive.github.io/g-chartcolour/
 scrapes the palette nodes, then calls the get_palette function on each to return tabular results
 }
+\examples{
+get_g_chartcolour_palettes()
+}

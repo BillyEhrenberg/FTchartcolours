@@ -10,5 +10,8 @@ get_palette(palette)
 \item{palette}{a palette node from https://ft-interactive.github.io/g-chartcolour/}
 }
 \description{
-This function tabularises a single palette. Is called only inside get_g_chartcolour_palettes()
+This function tabularises a single palette. Is called only inside get_g_chartcolour_palettes
+}
+\examples{
+get_palette()
 }

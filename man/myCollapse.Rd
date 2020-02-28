@@ -12,5 +12,8 @@ myCollapse(array, sep = "|")
 \item{sep}{what to interpace the array elements with, defualts to the or operator |}
 }
 \description{
-This function is a wrapper around the paste(c, collapse = '')
+This function is a wrapper around the paste
+}
+\examples{
+myCollapse()
 }

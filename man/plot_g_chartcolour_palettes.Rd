@@ -4,11 +4,14 @@
 \alias{plot_g_chartcolour_palettes}
 \title{A function to plot all the palettes in gchartcolour for colour picking}
 \usage{
-plot_g_chartcolour_palettes(g_chartcolour_palettes)
+plot_g_chartcolour_palettes(g_chartcolour_palettes_df)
 }
 \arguments{
-\item{g_chartcolour_palettes}{loaded palettes, using get_g_chartcolour_palettes}
+\item{g_chartcolour_palettes_df}{loaded palettes, using get_g_chartcolour_palettes}
 }
 \description{
 This function plots all palettes using ggplot2. Requires the colour palettes to be in the global environment
+}
+\examples{
+plot_g_chartcolour_palettes()
 }

@@ -3,6 +3,7 @@
 #' Returns a named list of the palettes on this page https://ft-interactive.github.io/g-chartcolour/
 #' scrapes the palette nodes, then calls the get_palette function on each to return tabular results
 #' @export
+#' @examples
 #' get_g_chartcolour_palettes()
 
 get_g_chartcolour_palettes <- function(){
@@ -21,9 +22,10 @@ get_g_chartcolour_palettes <- function(){
 
 #' A function to tabularise the data in a palette node.
 #'
-#' This function tabularises a single palette. Is called only inside get_g_chartcolour_palettes()
+#' This function tabularises a single palette. Is called only inside get_g_chartcolour_palettes
 #' @param palette a palette node from https://ft-interactive.github.io/g-chartcolour/
 #' @export
+#' @examples
 #' get_palette()
 
 get_palette <- function(palette){
@@ -57,6 +59,7 @@ get_palette <- function(palette){
 #'
 #' @param palette a formatted palette node in dataframe format, as returned by the above functions
 #' @export
+#' @examples
 #' get_colours_from_palette()
 
 
