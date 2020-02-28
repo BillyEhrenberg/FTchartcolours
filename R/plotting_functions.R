@@ -9,7 +9,9 @@
 
 plot_g_chartcolour_palettes <- function(g_chartcolour_palettes_df){
 
-  ggplot2::ggplot(dplyr::bind_rows(g_chartcolour_palettes_df),
+  g_chartcolour_palettes_df <- dplyr::bind_rows(g_chartcolour_palettes_df)
+
+  ggplot2::ggplot(g_chartcolour_palettes_df,
                   ggplot2::aes(factor(index),
              factor(palette),
              fill = factor(seq_along(index))
