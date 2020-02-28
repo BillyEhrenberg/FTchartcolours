@@ -65,6 +65,6 @@ get_palette <- function(palette){
 
 get_colours_from_palette <- function(palette){
 
-  pull(palette, hex_code)
+  dplyr::pull(palette, hex_code)
 
 }
