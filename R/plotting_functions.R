@@ -22,6 +22,8 @@ plot_g_chartcolour_palettes <- function(g_chartcolour_palettes_df){
     ggplot2::theme(
       legend.position = 'none'
     )+
-    ggplot2::geom_text(ggplot2::aes(label = hex_code), size = 3)
+    ggplot2::geom_text(ggplot2::aes(label = hex_code), size = 3)+
+    ggplot2::xlab('')+
+    ggplot2::ylab('')
 
 }
