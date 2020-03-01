@@ -108,7 +108,7 @@ assign_all_palettes <- function(palettes = NULL){
 
 remove_all_palettes <- function(palettes){
 
-  palettes %>%
+  names(palettes) %>%
     purrr::map(~{
       rm(list = .x, envir = .GlobalEnv)
     })
