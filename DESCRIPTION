@@ -12,6 +12,7 @@ Imports:
     dplyr,
     rvest,
     stringr,
+    stringi,
     purrr,
     magrittr,
     xml2,
