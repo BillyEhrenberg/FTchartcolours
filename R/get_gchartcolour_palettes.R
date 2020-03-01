@@ -96,3 +96,22 @@ assign_all_palettes <- function(palettes = NULL){
 
 }
 
+
+#' A function to remove all palettes
+#'
+#' @param palettes a list of palettes gained through get_g_chartcolour_palettes.
+#' @export
+#' @examples
+#' remove_all_palettes()
+
+
+
+remove_all_palettes <- function(palettes){
+
+  palettes %>%
+    purrr::map(~{
+      rm(list = .x, envir = .GlobalEnv)
+    })
+
+}
+
